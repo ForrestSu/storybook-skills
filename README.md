@@ -6,10 +6,10 @@
 👉 实现效果可以看：**绘图采用NanoBanana2**
 ![]()
 
+## 💡 背景
 
 如何把 AI 用在日常生活场景？比如育儿场景：给娃定制绘本，改掉坏习惯。
-绘本风格：皮普和波西，模型：NanoBanana2
-特点：支持指定年龄段，支持双语。
+绘本风格：皮普和波西，支持指定年龄段；Codebuddy+NanoBanana2
 
 ## 🚀 安装
 
@@ -26,7 +26,7 @@ npm install
 ### `/storybook` - 生成绘本 ✨
 
 ```
-/storybook 我4岁女儿最近不爱刷牙，结合 @prototype/pip-and-posy 里的角色图和故事模式帮我设计一个绘本，让她可以对刷牙感兴趣。主题：吃苹果
+/storybook 我4岁女儿最近不爱刷牙，结合 @prototype/pip-and-posy 里的角色图和故事模式帮我设计一个绘本，让她可以对刷牙感兴趣。
 /storybook 防止我4岁女儿近视，结合 @prototype/pip-and-posy 里的角色图和故事模式帮我设计一个绘本，让她少看IPAD和电视，结合小王子
 /storybook 我4岁女儿不爱吃绿色的青菜，结合 @prototype/pip-and-posy 里的角色图和故事模式帮我设计一个绘本，让她爱上吃青菜，结合小王子。
 ```
@@ -42,8 +42,8 @@ storybook/{slug}-{timestamp}/
 ├── prompts/
 │   ├── 00-cover.md         # 封面 Prompt
 │   └── 01-page.md ~ ...    # 各页 Prompt
-├── 00-cover.jpeg ~ ...     # 页面插画
-└── all-pages.jpeg           # 长图预览
+├── 00-cover.png ~ ...      # 页面插画
+└── all-pages.png           # 网格图预览
 ```
 
 ### `/refine` - 精调页面 🔧
