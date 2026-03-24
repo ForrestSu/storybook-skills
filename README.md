@@ -25,7 +25,8 @@ npm install
 ### `/storybook` - 生成绘本 ✨
 
 ```
-/storybook 我儿子最近不爱刷牙，结合 @prototype/pip-and-posy 里的角色图和故事模式帮我设计一个绘本，让他可以对刷牙感兴趣
+/storybook 我4岁女儿最近不爱刷牙，结合 @prototype/pip-and-posy 里的角色图和故事模式帮我设计一个绘本，让她可以对刷牙感兴趣。主题：吃苹果
+/storybook 防止我4岁女儿近视，结合 @prototype/pip-and-posy 里的角色图和故事模式帮我设计一个绘本，让她少看IPAD和电视，结合小王子
 ```
 
 **📂 生成结果：**
