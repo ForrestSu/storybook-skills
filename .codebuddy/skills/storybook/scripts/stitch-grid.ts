@@ -12,7 +12,7 @@
  *   --gap <px>     图片之间的间距（像素），默认 5
  *   --no-open      不自动打开生成的图片
  *
- * 输出: <book-dir>/all-pages-grid.jpeg
+ * 输出: <book-dir>/all-pages-grid.png
  */
 
 import path from "node:path";
@@ -26,7 +26,7 @@ import sharp from "sharp";
 
 /**
  * 在书目录中找到所有页面图片，按自然顺序排序。
- * 匹配: 00-cover.jpeg, 01-page.jpeg, ..., NN-page.jpeg
+ * 匹配: 00-cover.png, 01-page.png, ..., NN-page.png
  * 同时兼容 .jpeg / .jpg / .png 扩展名。
  */
 async function collectPageImages(bookDir: string): Promise<string[]> {
@@ -133,7 +133,7 @@ async function stitchGrid(
     },
   })
     .composite(composites)
-    .jpeg({ quality: 90 })
+    .png()
     .toFile(outputPath);
 
   console.log(`Saved: ${outputPath}`);
@@ -185,7 +185,7 @@ async function main(): Promise<void> {
   bun stitch-grid.ts <book-directory> [options]
 
 Combines all page images (00-cover through NN-page) into a grid layout
-image saved as all-pages-grid.jpeg in the book directory.
+image saved as all-pages-grid.png in the book directory.
 
 Options:
   --cols <n>     Number of images per row (default: 4)
@@ -221,7 +221,7 @@ Examples:
   const images = await collectPageImages(bookDir);
   if (images.length === 0) {
     console.error(
-      `Error: no page images found in ${bookDir} (expected 00-cover.jpeg, 01-page.jpeg, ...)`
+      `Error: no page images found in ${bookDir} (expected 00-cover.png, 01-page.png, ...)`
     );
     process.exitCode = 1;
     return;
@@ -232,7 +232,7 @@ Examples:
     console.log(`  ${path.basename(img)}`);
   }
 
-  const outputPath = path.join(bookDir, "all-pages-grid.jpeg");
+  const outputPath = path.join(bookDir, "all-pages-grid.png");
   await stitchGrid(images, outputPath, cols, gap);
 
   // 自动预览
