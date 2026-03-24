@@ -3,8 +3,13 @@
 基于 AI 的儿童绘本自动生成系统。从故事主题出发，自动完成角色设计、分镜脚本、Prompt 编写、角色参考图生成、逐页插画生成，输出一本完整的绘本。
 
 
-👉 实现效果可以看：**如何用 NanoBanana2 给小孩定制绘本**
+👉 实现效果可以看：**绘图采用NanoBanana2**
 ![]()
+
+
+如何把 AI 用在日常生活场景？比如育儿场景：给娃定制绘本，改掉坏习惯。
+绘本风格：皮普和波西，模型：NanoBanana2
+特点：支持指定年龄段，支持双语。
 
 ## 🚀 安装
 
@@ -13,10 +18,6 @@ git clone git@github.com:ForrestSu/storybook-skills.git
 cd storybook
 npm install
 ```
-
-## ⚙️ 配置
-
-无需配置
 
 ## 🎨 使用
 
@@ -27,6 +28,7 @@ npm install
 ```
 /storybook 我4岁女儿最近不爱刷牙，结合 @prototype/pip-and-posy 里的角色图和故事模式帮我设计一个绘本，让她可以对刷牙感兴趣。主题：吃苹果
 /storybook 防止我4岁女儿近视，结合 @prototype/pip-and-posy 里的角色图和故事模式帮我设计一个绘本，让她少看IPAD和电视，结合小王子
+/storybook 我4岁女儿不爱吃绿色的青菜，结合 @prototype/pip-and-posy 里的角色图和故事模式帮我设计一个绘本，让她爱上吃青菜，结合小王子。
 ```
 
 **📂 生成结果：**
