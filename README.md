@@ -28,6 +28,10 @@ npm install
 /storybook 我4岁女儿不爱吃绿色的青菜，结合 @prototype/pip-and-posy 里的角色图和故事模式帮我设计一个绘本，让她爱上吃青菜，结合小王子。
 ```
 
+**生成效果✨：**
+
+<img src="./example.webp" width="800">
+
 **📂 生成结果：**
 
 ```
